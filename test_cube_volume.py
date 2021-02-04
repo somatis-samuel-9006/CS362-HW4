@@ -5,6 +5,8 @@ class TestCubeVolume(unittest.TestCase):
     def test_cube_volume_int(self):
         result1 = cube_volume.cube_volume(5, 2, 3)
         self.assertEqual(result1, 30)
+        result1 = cube_volume.cube_volume(-5, 2, 3)
+        self.assertEqual(result1, -30)
     
     def test_cube_volume_float(self):
         result2 = cube_volume.cube_volume(5.5 ,3.2, 6.4)
